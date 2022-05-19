@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sidenav</title>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Google Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container section">
+        <a href="#" class="sidenav-trigger" data-target="menuSidenav"><i class="material-icons">menu</i></a>
+        <ul class="sidenav" id="menuSidenav">
+            <li>
+                <!--Para ver imagen circular y datos de la persona-->
+                <div class="user-view">
+                    <div class="background">
+                        <img src="https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                    </div>
+                    <a href="#">
+                        <img src="https://media.istockphoto.com/photos/rendering-winking-emoji-isolated-on-white-background-picture-id993596982?k=20&m=993596982&s=612x612&w=0&h=bwpYBRntzFxgrJpV6R1cuBtt41reOX1cBQZM3S_ZyoE=" alt="" class="circle">
+                    </a>
+                    <a href="#">
+                        <span class="name white-text">Rodrigo Otárola</span>
+                    </a>
+                    <a href="#">
+                        <span class="email white-text">Rodrigo.otarola@xxx.cl</span>
+                    </a>
+                </div>
+            </li>
+            <li><a href="#"><i class="material-icons">cloud</i>Sección 1</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#"><i class="material-icons">cloud_download</i>Sección 2</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#"><i class="material-icons">cloud_off</i>Sección 3</a></li>
+        </ul>
+    </div>
+    
+    <div class="container section">
+        <div class="row">
+            <div class="col s12">
+                <!--Para crear imagenes deslizantes-->
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img src="https://images.pexels.com/photos/4502161/pexels-photo-4502161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                            <div class="caption center-align">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <h5 class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus id consectetur, voluptate quia cumque ut.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://images.pexels.com/photos/11160230/pexels-photo-11160230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                            <div class="caption center-align">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <h5 class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus id consectetur, voluptate quia cumque ut.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://images.pexels.com/photos/8685551/pexels-photo-8685551.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                            <div class="caption center-align">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <h5 class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus id consectetur, voluptate quia cumque ut.</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Material box, para poder ampliar la imagen-->
+            <div class="col s12">
+
+            </div>
+            <div class="col s4">
+                <div class="section">
+                    <img src="https://images.pexels.com/photos/4502161/pexels-photo-4502161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="materialboxed responsive-img" data-caption="Cabaña sola en la montaña">
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="section">
+                    <img src="https://images.pexels.com/photos/4502161/pexels-photo-4502161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="materialboxed responsive-img" data-caption="Cabaña sola en la montaña">
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="section">
+                    <img src="https://images.pexels.com/photos/4502161/pexels-photo-4502161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="materialboxed responsive-img" data-caption="Cabaña sola en la montaña">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems)
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems);
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

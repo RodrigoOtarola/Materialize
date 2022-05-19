@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parallax</title>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Google Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="parallax-container">
+        <div class="parallax"><img src="https://fondosmil.com/fondo/29403.jpg" alt="" class="responsive-img"></div>
+    </div>
+    <div class="black white-text center">
+        <div class="container">
+            <div class="section">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur eius architecto minima voluptatem in reiciendis excepturi, delectus vero amet, dolorum quae eos saepe culpa, non ex quos dolor neque iusto.</p>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="https://fondosmil.com/fondo/29399.jpg" alt=""></div>
+    </div>
+    <div class="black white-text center">
+        <div class="container">
+            <div class="section">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur eius architecto minima voluptatem in reiciendis excepturi, delectus vero amet, dolorum quae eos saepe culpa, non ex quos dolor neque iusto.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modals</title>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Google Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container section">
+        <a href="#idModal" class="btn modal-trigger red"><i class="material-icons left">done_all</i>Modal</a>
+        <div class="modal" id="idModal">
+            <div class="modal-content">
+                <h4>Lorem, ipsum dolor.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, dolor similique neque exercitationem nam numquam animi porro perspiciatis, corporis at cumque rem nemo. Voluptatem nam ex molestias ullam maiores maxime.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn modal-close">Cerrar</a><!--Para cerrar el modal-->
+            </div>
+        </div>
+    </div>    
+
+    <!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+    </script>
+
+</body>
+</html>

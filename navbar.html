@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>navbar</title>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Google Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<!--    <nav class="nav-wrapper">
+        <div class="container">
+            <a href="#" class="brand-logo">Rodrigo</a>
+            <a href="#" data-target="menu-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down"> clase hide-on-med-and-down es para desaparecer menu en responsive
+                <li><a href="#">Enlace</a></li>
+                <li><a href="#">Enlace</a></li>
+                <li><a href="#">Enlace</a></li>
+            </ul>
+            <ul class="sidenav" id="menu-responsive">id tiene que tener el mismo nombre del data target
+                <li><a href="#">Enlace</a></li>
+                <li><a href="#">Enlace</a></li>
+                <li><a href="#">Enlace</a></li>
+            </ul>
+        </div>
+    </nav>-->
+    <div class="navbar-fixed"><!--Para que no se pierda el menu-->
+        <nav class="grey">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo right">Logo Corporativo</a>
+                <ul class="left">
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#" class="dropdown-trigger" data-target="id_drop">droptown<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+                <ul id="id_drop" class="dropdown-content">
+                    <li><a href="#">Item</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="red-text"><i class="material-icons right">close</i>Cerrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Para crear el card como en la pagina-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();/*Para inicializar todo lo de JS*/
+  });
+    </script>
+</body>
+</html>

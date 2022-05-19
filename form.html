@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Google Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container section">
+        <div class="row">
+            <form action="" class="col s12">
+                <div class="row card-panel"><!--Para que quede como tarjeta (card)-->
+                    <div class="input-field col s6">
+                        <input type="text" id="name" class="validate" required><!--Si se coloca placeholder cre una división-->
+                        <label for="name">Nombre:</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" id="apellidos" class="validate" required>
+                        <label for="apellidos">Apellidos:</label>                        
+                    </div>
+                    <div class="input-field col s12">
+                        <input type="email" id="email" class="validate" required>
+                        <label for="email">E-mail:</label>                        
+                    </div>
+                    <div class="col s6">
+                        <p>
+                            <label>
+                             <input type="checkbox"/>
+                             <span>Yellow</span>
+                            </label>
+                            &nbsp;
+                            <label>
+                              <input type="checkbox"/>
+                              <span>Yellow</span>
+                            </label>
+                        </p>
+                    </div>
+                    <!--Checkbox-->
+                    <div class="col s6">
+                        <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" checked="checkbox"/>
+                              <span>Filled in</span>
+                            </label>
+                            &nbsp;
+                            <label>
+                              <input type="checkbox" class="filled-in"/>
+                              <span>Filled in</span>
+                            </label>
+                          </p>
+                    </div>
+                    <!--date-->
+                    <div class="col s12">
+                        <input type="text" class="datepicker" id="FechNac" placeholder="Fecha de nacimiento">                        
+                    </div>
+                    
+                    <div class="col s4">
+                        <label>
+                            <input name="group1" type="radio" checked />
+                            <span>Red</span>
+                        </label>
+                        <label>
+                            <input name="group1" type="radio" checked />
+                            <span>Red</span>
+                        </label>
+                    </div>
+                    <div class="col s4">
+                        <label>
+                            <input class="with-gap" name="group1" type="radio"  />
+                            <span>Green</span>
+                        </label>
+                        <label>
+                            <input class="with-gap" name="group1" type="radio" checked="checked"/>
+                            <span>Green</span>
+                        </label>
+                    </div>
+                    <div class="col s4">
+                        <label>
+                            <input name="group1" type="radio" disabled="disabled" />
+                            <span>Brown</span>
+                        </label>
+                        <label>
+                            <input name="group1" type="radio" disabled="disabled" />
+                            <span>Brown</span>
+                        </label>
+                    </div>
+                    <div class="col s12">
+                        <div class="col s6">
+                            <p class="range-field">
+                                <input type="range" id="test5" min="0" max="50" />
+                            </p>                                  
+                        </div>
+                    </div>
+                    <div class="col s12">    
+                        <div class="input-field col s4">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Select unico</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <select multiple>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                              </select>
+                              <label>Select multiple</label>                            
+                        </div>
+                        <div class="input-field col s4">
+                            <select>
+                                <optgroup label="team 1">
+                                  <option value="1">Option 1</option>
+                                  <option value="2">Option 2</option>
+                                </optgroup>
+                                <optgroup label="team 2">
+                                  <option value="3">Option 3</option>
+                                  <option value="4">Option 4</option>
+                                </optgroup>
+                              </select>
+                              <label>Optgroups</label>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div class="input-field col s12 m6">
+                            <select class="icons">
+                              <option value="" disabled selected>Choose your option</option>
+                              <option value="" data-icon="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="left">example 1</option>
+                              <option value="" data-icon="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="left">example 2</option>
+                              <option value="" data-icon="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="left">example 3</option>
+                            </select>
+                            <label>Select con imagenes</label>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="switch">
+                                <label>
+                                  Si
+                                  <input type="checkbox">
+                                  <span class="lever"></span>
+                                  No
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+                    <!--Button-->
+                    <div class="col s12">
+                        <button type="submit" class="btn red">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+            <form action="" class="col s12">
+                <div class="row card-panel">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">search</i><!--Prefix localiza el icono en antes del input-->
+                        <input type="text" id="buscar" class="autocomplete">
+                        <label for="buscar">Buscar</label>
+                    </div>
+                </div>
+            </form>            
+        </div>
+        <div class="container" id="respuesta">
+            
+        </div>
+       
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var options ={
+            data: {
+            "Apple": null,
+            "Microsoft": null,
+            "Google": 'https://placehold.it/250x250'
+      },
+      onAutocomplete: function(texto){
+          /*console.log(`Seleccionaste ${texto}`);Para hacer comillas invertidas es con alt gr + }*/
+          respuesta.innerHTML = `<h3>Escogiste: ${texto}</h3>`;/*comillas invertidas es para juntar HTML y JS*/
+      }
+    }
+        var elems = document.querySelectorAll('.autocomplete');
+        var instances = M.Autocomplete.init(elems, options);
+                var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems,);
+        var elems = document.querySelectorAll('.datepicker');
+        var instances = M.Datepicker.init(elems,{
+        format: 'dd mm yyyy'/*Para cambiar formato de fecha*/
+    });
+        var slider = document.getElementById('test-slider');
+    noUiSlider.create(slider, {
+    start: [20, 80],
+    connect: true,
+    step: 1,
+    orientation: 'horizontal', // 'horizontal' or 'vertical'
+    range: {
+         'min': 0,
+         'max': 50
+   },
+   format: wNumb({
+     decimals: 0
+   })
+});
+    });
+
+    const respuesta = document.getElementById('respuesta');
+
+    </script>
+</body>
+</html>

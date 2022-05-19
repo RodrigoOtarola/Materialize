@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Slider</title>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Google Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container section">
+        <div class="row">
+            <div class="col s12">
+                <div class="carousel carousel-slider">
+                    <a href="#" class="carousel-item"><img src="https://images.pexels.com/photos/297507/pexels-photo-297507.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></a>
+                    <a href="#" class="carousel-item"><img src="https://images.pexels.com/photos/269630/pexels-photo-269630.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></a>
+                    <a href="#" class="carousel-item"><img src="https://images.pexels.com/photos/1831119/pexels-photo-1831119.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems,{
+            duration:500,/*Para duración en el cambio de foto al deslizar*/
+            indicators: true/*Para ver puntos para deslizar imagenes*/
+        });
+    });
+    </script>
+</body>
+</html>
